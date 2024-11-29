@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     color: 'white',
-    marginBottom: 10,
+    marginBottom: 11,
   },
   input: {
     width: '90%',

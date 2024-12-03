@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.yourappname">  <!-- Buraya uygun bir paket adı ekleyin -->
+    package="com.yourappname">  
 
     <uses-permission android:name="android.permission.INTERNET" />
 

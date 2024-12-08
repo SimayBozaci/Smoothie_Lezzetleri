@@ -51,7 +51,7 @@ const HomePage = () => {
                 });
               }}
             >
-              <Text style={styles.buttonText}>Go Drink</Text>
+              <Text style={styles.buttonText}>İçeceğe Git</Text>
             </TouchableOpacity>
           </View>
         )}

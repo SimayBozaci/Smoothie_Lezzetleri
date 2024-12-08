@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomePage from './src/components/HomePage';
 import DetailsPage from './src/components/DetailsPage';
+import AddressPage from './src/components/AddressPage';
 
 const Stack = createStackNavigator();
 
@@ -18,7 +19,12 @@ const App = () => {
         <Stack.Screen
           name="Details"
           component={DetailsPage}
-          options={{ title: 'Product Details' }}
+          options={{ title: 'Ürün Bilgileri' }}
+        />
+        <Stack.Screen
+          name="Address"
+          component={AddressPage}
+          options={{ title: 'Sipariş Ekranı' }}
         />
       </Stack.Navigator>
     </NavigationContainer>

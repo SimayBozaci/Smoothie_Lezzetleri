@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 
-const DetailsPage = ({ route }) => {
-  const { name, price, image,description} = route.params; 
+const DetailsPage = ({ route, navigation }) => {
+  const { name, price, image, description } = route.params;
 
   return (
     <View style={styles.container}>
@@ -10,6 +10,14 @@ const DetailsPage = ({ route }) => {
       <Text style={styles.productName}>{name}</Text>
       <Text style={styles.productPrice}>{price}</Text>
       <Text style={styles.description}>{description}</Text>
+
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => navigation.navigate('Address')}
+      >
+        <Text style={styles.buttonText}>Sipariş Ver</Text>
+      </TouchableOpacity>
+
     </View>
   );
 };
@@ -42,6 +50,17 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'black',
     marginTop: 10,
+  },
+  button: {
+    backgroundColor: 'orange',
+    padding: 15,
+    borderRadius: 5,
+    marginTop: 20,
+  },
+  buttonText: {
+    color: 'white',
+    fontSize: 16,
+    fontWeight: 'bold',
   },
 });
 
